@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Bold";
+    src: local("Assistant-Bold"),
+    url("./assets/fonts/Assistant-Bold.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "ExtraBold";
+    src: local("Assistant-ExtraBold"),
+    url("./assets/fonts/Assistant-ExtraBold.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "ExtraLight";
+    src: local("Assistant-ExtraLight"),
+    url("./assets/fonts/Assistant-ExtraLight.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "Light";
+    src: local("Assistant-Light"),
+    url("./assets/fonts/Assistant-Light.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "Medium";
+    src: local("Assistant-Medium"),
+    url("./assets/fonts/Assistant-Medium.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "Regular";
+    src: local("Assistant-Regular"),
+    url("./assets/fonts/Assistant-Regular.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: "SemiBold";
+    src: local("Assistant-SemiBold"),
+    url("./assets/fonts/Assistant-SemiBold.ttf") format("truetype")
+  }
+}
+
+@layer components {
+  .cd div div:hover h4 {
+    color: #1473e6;
+  }
+
+  .section-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px
+  }
+
+  .footer-apps > div:hover h4 {
+    color: #1473e6;
+    transition: 0.2s
+  }
+
+  .secItem:hover div p:last-of-type {
+    text-decoration: underline;
+  }
+}
